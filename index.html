@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Acessível</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao Site Acessível</h1>
+    <div class="acessibilidade">
+      <button onclick="aumentarFonte()">A+</button>
+      <button onclick="diminuirFonte()">A-</button>
+      <button onclick="alternarContraste()">Contraste</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre</h2>
+      <p>Este site foi criado para ser acessível a pessoas com deficiência visual e auditiva.</p>
+    </section>
+
+    <section>
+      <h2>Vídeo com Legenda</h2>
+      <video controls>
+        <source src="video-exemplo.mp4" type="video/mp4">
+        <track src="legenda.vtt" kind="subtitles" srclang="pt" label="Português" default>
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Projeto de Acessibilidade</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
